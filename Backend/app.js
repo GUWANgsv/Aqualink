@@ -3399,7 +3399,7 @@ app.post("/test-inventory-update", async (req, res) => {
 // MongoDB connection with retry logic
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect("mongodb+srv://admin:heshan1456@cluster0.cjvhnm4.mongodb.net/", {
+    const conn = await mongoose.connect(" ", {
       serverSelectionTimeoutMS: 10000, // 10 seconds
       socketTimeoutMS: 45000, // 45 seconds
     });
